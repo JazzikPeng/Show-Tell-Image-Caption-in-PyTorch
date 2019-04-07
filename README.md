@@ -16,7 +16,7 @@ Human Captions:
 
 ## Model Structure
 
-### Work embedding
+### Word embedding
 We did not used any pre-trained word embedding. We generated world embedding from the 5 human captions comes with each images. Then we added *<start*>, *<end*>, *<unk*>, *<pad*> token into our vocabulary. The order of the vocabulary is essential, and the model has to be trained and tested using the exactly same vocabulary.
 
 ### Encoder
