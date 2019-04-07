@@ -27,9 +27,6 @@ We used a multiple layers of **LSTM** as decoder. Then we apply **Greedy Search*
 
 ![Model Structure](./Model_Strcuture.png)
 
-## Reference
-[1] Vinyals, O., Toshev, A., Bengio, S., & Erhan, D. (2015). Show and tell: A neural image caption generator. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 3156-3164).
-
 ## Result
 Following is the loss comparison. The model performance is measured using *Bleu-4* score. Since the *Bleu-4* score is very difference using difference smoothing function, so we computed a baseline *Bleu-4* score by taking the average of one human caption against other 4 captions for each caption on all testing images. Our baseline *Bleu-4* is 0.3008. The average *Bleu-4* score of our model performed better than this baseline.
 
@@ -46,6 +43,8 @@ We also built a simple user interface for this model. You can selected pre-train
 
 We can see the result is actually pretty good. However, when there are multiple objects in the picture, the model can only caption some of the objects and miss the others. This really depends on the human captions the model is trained on.
 
+## Reference
+[1] Vinyals, O., Toshev, A., Bengio, S., & Erhan, D. (2015). Show and tell: A neural image caption generator. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 3156-3164).
 
 ## Acknowledgments
 - [Vinyals, Oriol, et al. “Show and Tell: A Neural Image Caption Generator.” 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 20 Apr. 2015, doi:10.1109/cvpr.2015.7298935.](./Show&Tell.pdf)
